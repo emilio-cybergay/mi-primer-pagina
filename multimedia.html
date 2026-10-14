@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English | Media</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html" class="logo">ENGLISH<span>CLASS</span></a>
+    <nav class="menu">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="gramatica.html">Grammar</a></li>
+        <li><a href="multimedia.html" class="activo">Multimedia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenido">
+
+    <main>
+
+      <section>
+        <h1>Multimedia</h1>
+        <p>Video, audio y un formulario para que me dejes tu opinión.</p>
+      </section>
+
+      <section class="dos-columnas">
+        <div>
+          <h2>Video</h2>
+          <video controls>
+            <source src="../video/1.mp4" type="video/mp4">
+            Tu navegador no admite la etiqueta de video.
+          </video>
+        </div>
+
+        <div>
+          <h2>Listening practice</h2>
+          <audio controls>
+            <source src="../audio/2.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </section>
+
+      <section>
+        <h2>Tu opinión</h2>
+        <form action="mailto:tucorreo@ejemplo.com" method="post" enctype="text/plain">
+
+          <fieldset>
+            <legend>Tus datos</legend>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Sobre el inglés</legend>
+
+            <label for="nivel">¿Cuál es tu nivel?</label>
+            <select id="nivel" name="nivel">
+              <option value="basico">Beginner</option>
+              <option value="intermedio">Intermediate</option>
+              <option value="avanzado">Advanced</option>
+            </select>
+
+            <p style="margin-top:12px;"><strong>¿Te gusta el inglés?</strong></p>
+            <label class="opcion"><input type="radio" name="gusto" value="si"> Sí</label>
+            <label class="opcion"><input type="radio" name="gusto" value="no"> No</label>
+
+            <p style="margin-top:12px;"><strong>¿Qué quieres mejorar?</strong></p>
+            <label class="opcion"><input type="checkbox" name="mejorar" value="speaking"> Speaking</label>
+            <label class="opcion"><input type="checkbox" name="mejorar" value="listening"> Listening</label>
+            <label class="opcion"><input type="checkbox" name="mejorar" value="reading"> Reading</label>
+            <label class="opcion"><input type="checkbox" name="mejorar" value="writing"> Writing</label>
+
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe aquí tu opinión..."></textarea>
+          </fieldset>
+
+          <button type="submit" class="boton">Enviar</button>
+          <button type="reset" class="boton secundario">Borrar</button>
+
+        </form>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
